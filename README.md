@@ -1,1 +1,2 @@
-# Calfun_Francisco_FPY1101_006D
+#Ignacio Bittner
+#Integrantes: Ignacio Bittner, Diego Mancilla y Miguel Tropa
