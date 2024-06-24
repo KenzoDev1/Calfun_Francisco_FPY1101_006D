@@ -34,4 +34,31 @@ while True:
     elif opcion==6:
         print("●Has elegido salir del Programa");
         break
-        
+        def resgistros():
+    nombre=input("ingrese el su producto: -> ").title()
+    time.sleep(0.3)
+    cantidad=input("Ingrese la cantidad del producto: -> ").title()
+    time.sleep(0.3)
+    time.sleep(0.3)
+    try:  
+     precio=int(input("Ingrese ingrese el precion del producto: -> "));
+     time.sleep(0.3)
+    except ValueError:
+     print("Ingrese caracteres validos.");
+    productos={'Nombre':nombre,
+                'Apellido':cantidad,
+                'Sueldo':precio};
+    lista_registros.append(productos);
+    print(":Producto registrado exitosamente:");
+    time.sleep(0.3)
+def monstrar_produdtos():
+   if len(lista_registros) == 0:
+      print("No hay productos en el sistema")
+   else:
+      print("Lista de trabajadores registrados")
+      for i, trabajador in enumerate(lista_registros,start=1):
+         nombre = trabajador['Nombre']
+         cantidad = trabajador['Apellido']
+         precio= trabajador['Sueldo']
+         print(f"{i}-. {nombre} {cantidad}- precio {precio}")
+         time.sleep(0.3)
